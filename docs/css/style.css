@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Mali|Montserrat');
+body
+{
+  margin: 0;
+  background: #031927;
+  text-decoration: none;
+}
+.Center
+{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 60vw;
+  height: 20vw;
+  background-color: #ccc;
+  border-radius: 2vw;
+  text-align: center;
+}
+h1
+{
+  font-family: "Mali";
+  font-weight: 700;
+  font-size: 4vw;
+}
+h2
+{
+  font-family: "Mali";
+  font-weight: 300;
+  font-size: 2vw;
+}
