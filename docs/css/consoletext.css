@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Mali|Montserrat');
+
+HeaderText
+{
+
+}
+Highlight
+{
+font-weight: bold;
+  color: magenta;
+}
+Syntax1
+{
+  /* BLUE */
+  color: #2B80FD;
+  font-weight: bold;
+}
+Syntax2
+{
+  /* GREEN-BLUE */
+  color:#4EC9B0;
+  font-weight:bold;
+}
+Syntax3
+{
+  /* ORANGE-RED */
+  color: #B65E3E;
+  font-weight: bold;
+}
+consoletext
+{
+  font-size: 15px;
+}
+Highlight2
+{
+  color: orange;
+  font-weight: bold;
+}
