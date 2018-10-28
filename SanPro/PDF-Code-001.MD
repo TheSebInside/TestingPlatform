@@ -6,7 +6,8 @@
 #### ⚠️ Required iTextSharp Libary
 ---
 ### Code:
-```shPdfContentByte pdfContentByte = pdfWriter.DirectContent;
+```sh
+PdfContentByte pdfContentByte = pdfWriter.DirectContent;
 ColumnText column = new ColumnText(pdfContentByte);
 column.SetSimpleColumn(70, 70, 70, 70);
 column.AddElement(new Paragraph("Your Text goes here"));
