@@ -1,0 +1,48 @@
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <title>Console</title>
+    <link rel="stylesheet" href="../../css/console.css">
+    <link rel="stylesheet" href="../../css/consoletext.css">
+  </head>
+  <body>
+    <div class="content" style="height:550px;">
+    <div class="browser-bar">
+      <a href="../../index.html" style="cursor: hand;"><span class="close button"></span></a>
+      <a href="../../index.html" style="cursor: hand;"><span class="min button"></span></a>
+      <a href="../../index.html" style="cursor: hand;"><span class="max button"></span></a>
+    </div>
+      <div class="text">
+        <HeaderText>Selected Project: <Highlight>SanPro</Highlight> | Title: "iTextSharp - add Text with position"
+        <br>Originallink: <a href="https://github.com/TheSebInside/TestingPlatform/blob/master/SanPro/PDF-Code-001.MD">Click here</a></HeaderText>
+        <br>
+        <h4 style="color: orange;">IMPORTANT:<br><span style="color: white;">Required .NET Framework<br>Required iTextSharp Libary</br>Language: C#</span></h4>
+        <h3>CODE:</h3>
+          <consoletext>
+            <p>
+              <Syntax2>PdfContentByte</Syntax2> pdfContentByte = pdfWriter.DirectContent;
+              <br>
+              <Syntax2>ColumnText</Syntax2> column = <Syntax1>new</Syntax1> <Syntax2>ColumnText</Syntax2>(pdfContentByte);
+              <br>
+              column.SetSimpleColumn(<Syntax4>70</Syntax4>,<Syntax4>70</Syntax4>,<Syntax4>70</Syntax4>,<Syntax4>70</Syntax4>);
+              <br>
+              column.AddElement(<Syntax1>new</Syntax1><Syntax2> Paragraph</Syntax2>(<Syntax3>"Your Text goes here"</Syntax3>));
+              <br>
+              column.Go();
+            </p>
+          </consoletext>
+      <h3>ADDITIONAL/REQUIRED CODE:</h3>
+        <consoletext><p>
+          pdfWriter => See here: <a href="https://stackoverflow.com/a/21415636">LINK</a>
+          <br>
+          <Syntax1>using</Syntax1> System;
+          <br>
+          <Syntax1>using</Syntax1> iTextSharp.text;
+          <br>
+          <Syntax1>using</Syntax1> iTextSharp.text.pdf;
+        </consoletext>
+      </div>
+    </div>
+    <p class="Copyright" style="bottom: 0;">(c) TheSebInside | Customized Console based on the "404 Console" by <a href="https://codepen.io/danielcgold/">Dan Gold</a></p>
+  </body>
+</html>
