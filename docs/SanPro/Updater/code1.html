@@ -1,0 +1,46 @@
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <title>Console</title>
+    <link rel="stylesheet" href="../../css/console.css">
+    <link rel="stylesheet" href="../../css/consoletext.css">
+  </head>
+  <body>
+    <div class="content" style="height:520px;">
+    <div class="browser-bar">
+      <a href="../../index.html" style="cursor: hand;"><span class="close button"></span></a>
+      <a href="../../index.html" style="cursor: hand;"><span class="min button"></span></a>
+      <a href="../../index.html" style="cursor: hand;"><span class="max button"></span></a>
+    </div>
+      <div class="text">
+        <HeaderText>Selected Project: <Highlight>SanPro</Highlight> | Title: "Get Content from File on Server"
+        <br>Originallink: <a href="https://github.com/TheSebInside/TestingPlatform/blob/master/SanPro/Code-001.MD">Click here</a></HeaderText>
+        <br>
+        <h4 style="color: orange;">IMPORTANT:<br><span style="color: white;">Required .NET Framework</br>Language: C#</span></h4>
+        <h3>CODE:</h3>
+          <consoletext>
+            <p>
+              <Syntax1>string</Syntax1> YourURL = <Syntax3>"</Syntax3>https://www.example.com/YourFile<Syntax3>"</Syntax3>;
+              <br>
+              <Syntax2>WebRequest</Syntax2> WR = <Syntax2>WebRequest</Syntax2>.Create(<Syntax1>new</Syntax1> <Syntax2>Uri</Syntax2>(YourURL));
+              <br>
+              <Syntax2>WebResponse</Syntax2> WS = WR.GetResponse();
+              <br>
+              <Syntax2>StreamReader</Syntax2> SR = <Syntax1>new</Syntax1> <Syntax2>StreamReader</Syntax2>(WS.GetResponseStream());
+              <br>
+              <Syntax1>string</Syntax1> YourString = SR.ReadToEnd();
+            </p>
+          </consoletext>
+      <h3>ADDITIONAL/REQUIRED CODE:</h3>
+        <consoletext><p>
+          <Syntax1>using</Syntax1> System;
+          <br>
+          <Syntax1>using</Syntax1> System.Net;
+          <br>
+          <Syntax1>using</Syntax1> System.IO;
+        </consoletext>
+      </div>
+    </div>
+    <p class="Copyright" style="bottom: 0;">(c) TheSebInside | Customized Console based on the "404 Console" by <a href="https://codepen.io/danielcgold/">Dan Gold</a></p>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <title>Console</title>
+    <link rel="stylesheet" href="../../css/console.css">
+    <link rel="stylesheet" href="../../ss/consoletext.css">
+  </head>
+  <body>
+    <div class="content" style="height:470px;">
+    <div class="browser-bar">
+      <a href="../../index.html" style="cursor: hand;"><span class="close button"></span></a>
+      <a href="../../index.html" style="cursor: hand;"><span class="min button"></span></a>
+      <a href="../../index.html" style="cursor: hand;"><span class="max button"></span></a>
+    </div>
+      <div class="text">
+        <HeaderText>Selected Project: <Highlight>SanPro</Highlight>    | Title: "Download File from Server"
+        <br>Originallink: <a href="https://github.com/TheSebInside/TestingPlatform/blob/master/SanPro/Code-003.MD">Click here</a></HeaderText>
+        <br>
+        <h4 style="color: orange;">IMPORTANT:<br><span style="color: white;">Required .NET Framework</br>Language: C#</span></h4>
+        <h3>CODE:</h3>
+      <consoletext>
+        <p>
+          <Syntax1>string</Syntax1> YourURL = <Syntax3>"</Syntax3>https://www.example.com/YourFile<Syntax3>"</Syntax3>;
+          <br>
+          <Syntax1>string</Syntax1> YourEndPath = <Syntax3>@"C:\ExampleFolder"</Syntax3>;
+          <br>
+          <Syntax2>WebClient</Syntax2> WC = <Syntax1>new</Syntax1> <Syntax2>WebClient</Syntax2>();
+          <br>
+          WC.DownloadFile(YourFile,YourEndPath);
+        </p>
+      </consoletext>
+        <h3>ADDITIONAL/REQUIRED CODE:</h3>
+        <consoletext>
+          <p>
+            <Syntax1>using</Syntax1> System;
+            <br>
+            <Syntax1>using</Syntax1> System.Net;
+          </p>
+        </consoletext>
+      </div>
+    </div>
+    <p class="Copyright" style="bottom: 0;">(c) TheSebInside | Customized Console based on the "404 Console" by <a href="https://codepen.io/danielcgold/">Dan Gold</a></p>
+  </body>
+</html>
